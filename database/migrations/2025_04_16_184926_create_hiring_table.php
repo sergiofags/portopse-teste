@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('id_vacancy')->constrained('vacancy');
             $table->foreignId('id_person')->constrained('person');
             $table->foreignId('id_candidacy')->constrained('candidacy');
+            $table->foreignId('id_classification')->constrained('classification');
 
             $table->date('date_hiring');
             $table->date('date_exam');

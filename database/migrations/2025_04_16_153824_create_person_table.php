@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('person', function (Blueprint $table) {
             $table->id();
+            
             $table->foreignId('id_user')->constrained('users');
+
             $table->string('name');
             $table->string('profile_photo')->nullable();
             $table->sting('about')->nullable();

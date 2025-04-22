@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('candidacy', function (Blueprint $table) {
             $table->id();
+
             $table->foreignId('id_person')->constrained('person');
             $table->foreignId('id_vacancy')->constrained('vacancy');
+            
             $table->enum('status', ['Cancelado', 'Analise', 'Completo']);
             $table->date('candidacy_date');
             $table->timestamps();

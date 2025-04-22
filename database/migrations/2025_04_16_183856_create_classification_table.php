@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
 
             $table->foreignId('id_candidacy')->constrained('candidacy');
+            
             $table->float('cr_score');
             $table->float('interview_score');
             $table->enum('situation', ['Habilitado', 'Inabilitado', 'Desclassificado']);

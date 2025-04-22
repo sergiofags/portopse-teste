@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
 
-            $table->enum('type_profile', ['Candidate', 'Administrator', 'Super Administrator']); 
+            $table->enum('type_profile', ['Candidato', 'Administrador', 'Super Administrador']); 
             //Apenas adicionei o tipo perfil, o resto posso manter padrão
 
             $table->rememberToken();
