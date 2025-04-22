@@ -18,7 +18,7 @@ return new class extends Migration
 
             $table->string('name');
             $table->string('profile_photo')->nullable();
-            $table->sting('about')->nullable();
+            $table->string('about')->nullable();
             $table->string('linkedin_profile')->nullable();
             $table->string('cpf')->unique();
             $table->date('birthDate');
